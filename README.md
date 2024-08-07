@@ -8,8 +8,6 @@ Among the dependencies the most important ones are:
 | ----------------- | ------- |
 | Node.js           | 20.x.x  |
 | react             | ^18.2.0 |
-| redux             | ^4.2.0  |
-| styled-components | ^5.3.5  |
 | tailwindcss       | ^3.2.4  |
 | typescript        | ^4.9.4  |
 
@@ -45,17 +43,15 @@ Important **dev** dependencies:
     npm install
     ```
 
-3. Ask a teammate for their `.env` and place it in the root folder.
-
-4. Next, you can start the development server (if you are a developer).
+3. Next, you can start the development server (if you are a developer).
 
     ```shell
     npm run start
     ```
 
-    The website should be accessible at http://localhost:8000/.
+    The website should be accessible at http://localhost:3000/.
 
-5. ##### For use in production build and serve the project using following commands
+4. ##### For use in production build and serve the project using following commands
 
     ```shell
     npm run build
@@ -75,8 +71,6 @@ Lint: `npm run lint`
 Lint Fix: `npm run lint --fix`
 
 Build: `npm run build`
-
-Coverage: `npm run coverage`
 
 ## Jest Reporter
 
