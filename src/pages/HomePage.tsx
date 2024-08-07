@@ -20,16 +20,16 @@ const HomePage = () => {
   const addNotification = async (message: string) => {
     await addDoc(collection(db, 'notifications'), { message, read: false })
     await fetchNotifications()
-  };
+  }
 
   const markAsRead = async (id: string) => {
     await updateDoc(doc(db, 'notifications', id), { read: true })
     await fetchNotifications()
-  };
+  }
 
   useEffect(() => {
     fetchNotifications().then()
-  }, []);
+  }, [])
 
   return (
     <div className='flex flex-col rounded-t-3xl bg-white h-full'>
